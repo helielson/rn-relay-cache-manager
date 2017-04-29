@@ -1,0 +1,35 @@
+{
+  "name": "rn-relay-cache-manager",
+  "version": "0.0.1",
+  "description": "An implementation of the RelayCacheManager for local data caching in React Native",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/helielson/rn-relay-cache-manager.git"
+  },
+  "keywords": [
+    "relay",
+    "react-native",
+    "cache",
+    "relay-cache-manager",
+    "AsyncStorage"
+  ],
+  "author": "Helielson Santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helielson/rn-relay-cache-manager/issues"
+  },
+  "homepage": "https://github.com/helielson/rn-relay-cache-manager#readme",
+  "peerDependencies": {
+    "react-relay": "^0.10.0",
+    "react-native": "^0.40.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.15.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}

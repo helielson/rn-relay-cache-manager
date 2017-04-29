@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-console": 1,
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "arrowFunctions":true,
+    "destructuring": true
+  },
+  "globals": {
+    "setImmediate": true
+  }
+}
