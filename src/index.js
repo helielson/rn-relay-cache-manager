@@ -1,4 +1,7 @@
-import CacheWriter, { CacheWriterOptions } from './CacheWriter';
+// @flow
+
+import CacheWriter from './CacheWriter';
+import type { CacheWriterOptions } from './CacheWriter';
 
 export default class RelayCacheManager {
   cacheWriter: CacheWriter;

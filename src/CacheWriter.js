@@ -14,6 +14,7 @@ export type CacheWriterOptions = {
   cacheKey?: string,
   storage?: any,
   cachedData?: Object,
+  writeInterval?: number,
 }
 
 
@@ -21,6 +22,8 @@ export default class CacheWriter {
   cache: CacheRecordStore;
   cacheKey: string;
   storage: any;
+  writeInterval: number;
+  writeTimeout: setTimeout;
 
   constructor(options: CacheWriterOptions = {}) {
     this.cacheKey = options.cacheKey || DEFAULT_CACHE_KEY;
@@ -39,7 +42,7 @@ export default class CacheWriter {
     this.cache = new CacheRecordStore();
   }
 
-  throttle(fn) {
+  throttle(fn: Function) {
     const context = this;
     if (!this.writeTimeout) {
       this.writeTimeout = setTimeout(() => {

@@ -4,6 +4,7 @@
   "description": "An implementation of the RelayCacheManager for local data caching in React Native",
   "main": "src/index.js",
   "scripts": {
+    "flow": "flow check src/",
     "lint": "eslint src"
   },
   "repository": {
@@ -28,8 +29,9 @@
     "react-native": "^0.40.0"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^3.15.0",
-    "eslint-plugin-react": "^6.10.3"
+    "babel-eslint": "7.2.3",
+    "eslint": "3.15.0",
+    "eslint-plugin-react": "6.10.3",
+    "flow-bin": "0.42.0"
   }
 }
