@@ -20,7 +20,7 @@ $ npm install --save rn-relay-cache-manager
 Just create a instance of CacheManager and inject it to the Relay Store:
 
 ```js
-import CacheManager from 'relay-cache-manager';
+import CacheManager from 'rn-relay-cache-manager';
 
 const cacheKey = '__cache_key__';
 const cachedData = await AsyncStorage.getItem(cacheKey);
