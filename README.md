@@ -28,7 +28,7 @@ const cachedData = await AsyncStorage.getItem(cacheKey);
 const cacheManager = new CacheManager({
   cacheKey, // optional
   cachedData, // optional
-  storage: AsyncStorage,
+  storage: AsyncStorage, // default
 });
 Relay.Store.injectCacheManager(cacheManager);
 ```
@@ -41,5 +41,5 @@ Relay.Store.injectCacheManager(cacheManager);
 
 
 ## TODO
-- Add a example
+- Add an example
 - Write tests
