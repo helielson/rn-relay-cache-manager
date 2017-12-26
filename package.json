@@ -2,8 +2,9 @@
   "name": "rn-relay-cache-manager",
   "version": "0.1.0",
   "description": "An implementation of the RelayCacheManager for local data caching in React Native",
-  "main": "src/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
+    "build": "rm -rf dist/* && babel . --out-dir dist --ignore node_modules,dist",
     "flow": "flow check src/",
     "lint": "eslint src"
   },
@@ -25,13 +26,17 @@
   },
   "homepage": "https://github.com/helielson/rn-relay-cache-manager#readme",
   "peerDependencies": {
-    "react-relay": "^0.10.0",
-    "react-native": "^0.40.0"
+    "react-native": "^0.40.0",
+    "react-relay": "^0.10.0"
   },
   "devDependencies": {
+    "babel-cli": "6.26.0",
     "babel-eslint": "7.2.3",
+    "babel-preset-flow": "6.23.0",
+    "babel-preset-react-native": "4.0.0",
     "eslint": "3.15.0",
     "eslint-plugin-react": "6.10.3",
-    "flow-bin": "0.42.0"
+    "flow-bin": "0.42.0",
+    "react-relay": "0.10.0"
   }
 }
